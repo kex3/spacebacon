@@ -32,11 +32,14 @@ body * {
 }
 
 #pig {
-	background: url(render.png) -401px -100px;
+	background: url(render.png) 0 0;
 	z-index: 3;
 
-	width: 530px;
-	height: 550px;
+	width: 525px;
+	height: 542px;
 
 	right: -530px;
+
+	top: 50%;
+	margin-top: -271px;
 }
