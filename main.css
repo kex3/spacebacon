@@ -15,6 +15,12 @@ body {
 	height: 100%;
 }
 
+body * {
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+}
+
 #nebula {
 	background: url(Nebula_Fractal_by_deviant_dentex.png);
 	z-index: 2;

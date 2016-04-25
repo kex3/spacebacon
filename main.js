@@ -7,10 +7,9 @@ var starfield = document.getElementById('starfield'),
 	nebulaY = 0,
 	counter = 0;
 
-setInterval(function() {
+render = function() {
 	pigX = pigX + 0.5;
 	pigY = 100 + (50 * Math.sin(counter / 100));
-
 
 	counter++;
 	pig.style.right = pigX + 'px';
@@ -18,4 +17,8 @@ setInterval(function() {
 	pig.style.transform = 'rotate(' + ((counter / 10) % 360) + 'deg)';
 
 	nebula.style.transform = 'rotate(-' + ((counter / 30) % 360) + 'deg) scale(' + (2 + Math.sin(counter / 1000) % 360) + ')';
-}, 1000 / 60);
+
+	window.requestAnimationFrame(render);
+};
+
+render();
