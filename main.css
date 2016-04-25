@@ -1,0 +1,36 @@
+#starfield, #nebula, #pig {
+	position: absolute;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+
+	overflow: hidden;
+}
+
+body {
+	background: url(Star-field-3-Desktop-Wallpaper.jpg) 0 0;
+	width: 100%;
+	height: 100%;
+}
+
+#nebula {
+	background: url(Nebula_Fractal_by_deviant_dentex.png);
+	z-index: 2;
+	
+	left: 50%;
+	margin-left: -512px;
+	width: 1024px;
+	height: 768px;
+}
+
+#pig {
+	background: url(render.png) -401px -100px;
+	z-index: 3;
+
+	width: 530px;
+	height: 550px;
+
+	right: -530px;
+}
