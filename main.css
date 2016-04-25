@@ -1,4 +1,4 @@
-#starfield, #nebula, #pig {
+#starfield, .nebula, #pig {
 	position: absolute;
 }
 
@@ -21,19 +21,28 @@ body * {
 	-webkit-perspective: 1000;
 }
 
-#nebula {
-	background: url(Nebula_Fractal_by_deviant_dentex.png);
+#nebula-2 {
 	z-index: 2;
+}
+
+#nebula {
+	z-index: 3;
+}
+
+.nebula {
+	background: url(Nebula_Fractal_by_deviant_dentex.png);
 	
 	left: 50%;
 	margin-left: -512px;
+	top: 50%;
+	margin-top: -384px;
 	width: 1024px;
 	height: 768px;
 }
 
 #pig {
 	background: url(render.png) 0 0;
-	z-index: 3;
+	z-index: 5;
 
 	width: 525px;
 	height: 542px;
