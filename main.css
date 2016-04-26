@@ -38,6 +38,8 @@ body * {
 	margin-top: -384px;
 	width: 1024px;
 	height: 768px;
+
+	transition: opacity 2s linear;
 }
 
 #pig {
