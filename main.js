@@ -15,10 +15,10 @@ render = function() {
 	counter++;
 	pig.style.right = pigX + 'px';
 	pig.style.top = (pigY + pigYoffset) + 'px';
-	pig.style.transform = 'rotate(' + ((counter / 10) % 360) + 'deg)';
+	pig.style.transform = 'rotate(' + ((counter / 10) % 360) + 'deg) translateZ(0)';
 
-	nebulas[0].style.transform = 'rotate(-' + ((counter / 30) % 360) + 'deg) scale(' + (2 + Math.sin(counter / 1000) % 360) + ')';
-	nebulas[1].style.transform = 'rotate(' + ((180 + counter / 45) % 360) + 'deg) scale(' + (2 + 2 * Math.sin(counter / 750) % 360) + ')';
+	nebulas[0].style.transform = 'rotate(-' + ((counter / 30) % 360) + 'deg) scale(' + (2 + Math.sin(counter / 1000) % 360) + ') translateZ(0)';
+	nebulas[1].style.transform = 'rotate(' + ((180 + counter / 45) % 360) + 'deg) scale(' + (2 + 2 * Math.sin(counter / 750) % 360) + ') translateZ(0)';
 
 	if (counter % 60 === 0) {
 		nebulas[0].style.opacity = 0.4 + (0.6 * Math.random());
